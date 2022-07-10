@@ -1,0 +1,56 @@
+body{
+    header{
+        background-color: #0000006b;
+        .navBar{
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: "logo navbar ." ;
+            background-color: black;
+            width: 100%;
+            height: 10vh;
+            border-bottom: 5px solid chocolate;
+            .logo{
+                grid-area: logo;
+                padding-left: 30px;
+                color: white;
+                font-family: 'Edu QLD Beginner', cursive;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+            .nav{
+                grid-area: navbar;
+                .nav-item{
+                    .nav-link:hover{
+                        color: chocolate;
+                        transform: scale(1.2);
+                    }
+                    .nav-link{
+                        color: aliceblue;
+                    }
+                }
+            }
+            .redes:hover{
+                background-color: chocolate;
+                transform: scale(1.2);
+            }
+            .redes{
+                height: 50px;
+            }
+        }
+        .titulo{
+            border-bottom: 5px solid chocolate;
+            margin: 0px;
+            display: flex;
+            font-size: 100px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            height: 90vh;
+            font-family: 'Edu QLD Beginner', cursive;
+            font-family: 'Nunito Sans', sans-serif;
+            -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+body{
+    #tienda{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50vh;
+        padding: 20px 0px;
+        background-color: rgba(0, 0, 0, 0.493);
+        .tituloTienda{
+            text-decoration:overline chocolate;
+            color: white;
+            text-align: center;
+        }
+        #productos{
+            section:hover{
+                .card{
+                    border: 1px solid chocolate;
+                    box-shadow:10px 5px 5px rgba(255, 254, 254, 0.477);
+                    transform: scale(1.08);
+                    .card-description{
+                        display: block;
+                    }
+                }
+            }
+            section{
+                padding: 15px;
+                display: inline-block;
+                .card{
+                    height: auto;
+                    .card-img-top{
+                        max-height: 200px;
+                        height: 200px;
+                    }
+                    .card-description{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+}

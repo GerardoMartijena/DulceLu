@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Edu QLD Beginner', cursive;
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: none;
+  line-height: normal;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body {
+  background-image: url("/multimedia/imagenes/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+body header {
+  background-color: #0000006b; }
+  body header .navBar {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "logo navbar .";
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 5px solid chocolate; }
+    body header .navBar .logo {
+      grid-area: logo;
+      padding-left: 30px;
+      color: white;
+      font-family: 'Edu QLD Beginner', cursive;
+      font-family: 'Nunito Sans', sans-serif; }
+    body header .navBar .nav {
+      grid-area: navbar; }
+      body header .navBar .nav .nav-item .nav-link:hover {
+        color: chocolate;
+        transform: scale(1.2); }
+      body header .navBar .nav .nav-item .nav-link {
+        color: aliceblue; }
+    body header .navBar .redes:hover {
+      background-color: chocolate;
+      transform: scale(1.2); }
+    body header .navBar .redes {
+      height: 50px; }
+  body header .titulo {
+    border-bottom: 5px solid chocolate;
+    margin: 0px;
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 90vh;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100vh);
+    transform: translateX(-100vh); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100vh);
+    transform: translateX(-100vh); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background: black; }
+
+body::-webkit-scrollbar-thumb {
+  background: chocolate;
+  border-radius: 5px; }
+
+body #contacto {
+  margin-top: 60vh;
+  height: auto;
+  background-color: white; }
+  body #contacto .formContact {
+    padding: 20px; }
+    body #contacto .formContact .textoContacto {
+      text-decoration: overline chocolate;
+      text-align: center; }
+
+body #sobreNosotros {
+  margin-top: 60vh;
+  background-color: white;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  body #sobreNosotros .texto {
+    text-align: center;
+    margin: 0px 80px;
+    font-size: 20px;
+    text-shadow: 3px 2px 5px black; }
+  body #sobreNosotros .textSobreNosotros {
+    text-align: center;
+    text-decoration: overline chocolate; }
+
+body #tienda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50vh;
+  padding: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.493); }
+  body #tienda .tituloTienda {
+    text-decoration: overline chocolate;
+    color: white;
+    text-align: center; }
+  body #tienda #productos section:hover .card {
+    border: 1px solid chocolate;
+    box-shadow: 10px 5px 5px rgba(255, 254, 254, 0.477);
+    transform: scale(1.08); }
+    body #tienda #productos section:hover .card .card-description {
+      display: block; }
+  body #tienda #productos section {
+    padding: 15px;
+    display: inline-block; }
+    body #tienda #productos section .card {
+      height: auto; }
+      body #tienda #productos section .card .card-img-top {
+        max-height: 200px;
+        height: 200px; }
+      body #tienda #productos section .card .card-description {
+        display: none; }

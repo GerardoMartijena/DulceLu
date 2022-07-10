@@ -1,0 +1,14 @@
+body{
+    #contacto{
+        margin-top: 60vh;
+        height: auto;
+        background-color: white;
+        .formContact{
+            padding : 20px;
+            .textoContacto{
+                text-decoration:overline chocolate;
+                text-align: center;
+            }
+        }
+    }
+}
